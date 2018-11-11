@@ -703,6 +703,7 @@ CONTACT
     width: 100%;
     background-image: url(plante.jpg);
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 .contact hr{

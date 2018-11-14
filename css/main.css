@@ -559,6 +559,9 @@ SKILLS/LANGUAGES
 .languages{
     width: 100%;
 }
+.languages hr{
+    margin-bottom: 25px;
+}
 
 .languages h2{
     padding-top: 15px;

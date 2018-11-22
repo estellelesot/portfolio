@@ -227,6 +227,7 @@ nav a:hover {
     }
     .bar1, .bar2, .bar3{
         height: 3px;
+        width: 28px;
     }
     .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 4px);
@@ -237,6 +238,7 @@ nav a:hover {
     transform: rotate(45deg) translate(-8px, -4px);
 }
 }
+
 /*------------
 HERO
 -------------*/
@@ -311,17 +313,25 @@ HERO
 }
 @media screen and (max-width:450px){
     .hero{
-        min-height: 200px;
-        top: 20px;
+        min-height: 250px;
+        top: 40px;
+        justify-content: flex-start;
     }
+    
     .hero .background-image{
         position: absolute;
         width:100%;
         max-height: 200px;
         top: 0px;
     }
+    .hero h1{
+    font-size: 2.6em;
+    margin-top: 50px;
 }
-
+    .hero h3{
+        font-size: 1em;
+    }
+}
 
 /*------------
 ABOUT
@@ -452,7 +462,7 @@ ABOUT
 }
 @media screen and (max-width:450px){
     .round{
-        width: 100px;     
+        width: 120px;     
     }
     .img-estelle{
         height: 100%;
@@ -466,7 +476,6 @@ ABOUT
      .info{
         display: flex;
         margin: 0;
-         
     }
 
     .identite li{
@@ -478,6 +487,11 @@ ABOUT
     .identite i{
         margin-right: 20px; 
     }
+    
+    .about-me{
+        padding: 0
+    }
+    
     .about-me p{
         font-size: 14px;
     }
@@ -487,7 +501,6 @@ ABOUT
     height: 340px;
     z-index: -1;
 }
-
 }
 
 /*------------

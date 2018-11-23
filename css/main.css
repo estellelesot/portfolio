@@ -224,6 +224,8 @@ nav a:hover {
         width: 100%;
         left: 0;
         position: absolute;
+        padding: 0;
+        min-height: 7vh;
     }
     .bar1, .bar2, .bar3{
         height: 3px;
@@ -313,15 +315,15 @@ HERO
 }
 @media screen and (max-width:450px){
     .hero{
-        min-height: 250px;
-        top: 50px;
+        min-height: 230px;
+        top: 40px;
         justify-content: flex-start;
     }
     
     .hero .background-image{
         position: absolute;
         width:100%;
-        max-height: 180px;
+        max-height: 200px;
         top: 0px;
     }
     .hero h1{
@@ -468,7 +470,8 @@ ABOUT
         padding-top: 0;
     }
     .round{
-        width: 150px;     
+        width: 130px;  
+        padding-top: 10px;
     }
     .img-estelle{
         height: 100%;
@@ -480,18 +483,19 @@ ABOUT
     }
     
      .info{
-        display: flex;
+         flex-wrap: wrap;
         margin: 0;
     }
 
     .identite li{
-        display: flex;
+        display: block;
         font-size: 14px;  
         margin-bottom: 0;
+        text-align: center;
     }
     
     .identite i{
-        margin-right: 20px; 
+        margin-right: 0 ; 
     }
     
     .about-me{
@@ -514,7 +518,7 @@ ABOUT
     top: 0;
     right: 0 ;
     width: auto;
-    height: 350px;
+    height: 330px;
     z-index: -1;
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -629,10 +633,13 @@ SKILLS/LANGUAGES
     .skill{
         width: 100%;
         margin: 10px;
+        display: table-column;
+        text-align: center;
     }
     
     .skill-name{
         min-width: 90px;
+        margin-bottom: 5px;
     }  
     
     .skill-points{
@@ -740,7 +747,8 @@ CONTACT
     width: 100%;
     background-image: url(plante.jpg);
     background-repeat: no-repeat;
-    height: 100%;
+    height: 100vh;
+    padding-bottom: 0;
 }
 
 .contact hr{
@@ -762,8 +770,11 @@ input[type=text], select, textarea {
     letter-spacing: 2px;
     font-size: 0.9em;
 }
+.message{
+    height: 300px;
+}
 
-.container {
+.container2 {
     width: 100%;
 }
 
@@ -793,13 +804,29 @@ input[type=text], select, textarea {
     }
 }
 @media screen and (max-width:450px){
+    .contact{
+    height: 330px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+    .container2{
+        padding-top: 10px;
+    }
+    
     input[type=text], select, textarea {
         font-size: 0.7em;
         padding: 10px;
     }
-    .send-message input{
-        margin: 5px auto; 
+    .message{
+        height: 100px;
     }
+    .contact hr{
+    margin-bottom: 10px;
+    }
+    .send-message input{
+        margin: 10px auto; 
+    }
+
 }
 
 /*------------
